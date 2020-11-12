@@ -1,0 +1,102 @@
+
+/* header, footer, #side-menu section{
+    margin: 2px;
+    padding: 4px;
+    border: 2px solid blue;
+
+} 
+#content{
+    margin: 2px;
+    padding: 4px;
+    border: 2px solid red;}
+#side-menu, #main{
+    margin: 2px;
+    padding: 4px;
+    border: 2px solid green;
+
+}*/
+html{
+    height: 100%;
+}
+
+body{margin: 0;
+min-height: 100%;
+display: flex ;
+flex-direction: column;
+
+
+ }
+header,body > section{
+     flex: 1;
+ }
+ header > div {
+     padding: 5px;
+ }
+
+#content{ flex: 4;
+    display: flex;
+    flex-direction: row;
+}
+
+
+#side-menu{
+    flex: 1;
+    padding: 5px;
+}
+#main{
+    flex: 4;
+}
+
+footer{
+    min-height: 20px;
+    text-align: center;
+}
+
+body{
+    background-color:#f5f5f5;
+}
+
+
+#job{
+   color:blue ; text-align:right
+}
+#top-menu-bar{
+    text-align: center;
+    color:#fff;
+    background-color: #334455;
+}
+
+#top-menu-bar li{
+    display: inline;
+    padding:0;
+    margin: 0;
+}
+#top-menu-bar a{
+    text-decoration:none;
+    padding:0 15px 0 15px;
+    color:#fff
+}
+
+.favorite{
+    background-color: tomato;
+    color:black;
+    font-style: italic;
+   
+}
+#top-menu-bar a:visited {
+    color:#fff;}
+#top-menu-bar a:hover {
+    color:#334455;
+    background-color:#fff ;
+    transition: all 0.5s ease;
+}
+.page{
+    background-color: #ffffff;
+    padding:24px ;
+    border-radius:2px;
+    box-shadow: 0 0 0 1px rgb(0,0,0,.15),0 2px 3px rgba(0,0,0,.2);
+    margin:15px 0px
+    
+
+}
+
