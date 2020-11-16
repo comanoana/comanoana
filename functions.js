@@ -1,42 +1,27 @@
 
 function hide(id) {
-
 //document.getElementById(id).style.display= "none";
-var el = document.getElementById(id);
-console.info("hide"+ id,el);
+    var el = document.getElementById(id);
+    console.info(id, el);
 
-if (el){
-    el.style.display= "none";
-}
-else{
-    console.error("pagina nu exista", id);
-}
+    if (el){
+        el.style.display= "none";
+    }
+    else{
+        console.error("pagina nu exista", id);
+    }
 } 
 
 function hideAllPages(){
-    hide("home");
-    hide("skills");
-    hide("projects");
-    hide("languages");
-
+    var pages = document.querySelectorAll(".page");
+    for(var i = 0; i < pages.length; i++){
+       var page = pages[i];
+        var id = pages[i].id
+        hide(id);
+    } 
 }
-
-function showHome(){
-   hideAllPages();
-    document.getElementById('home').style.display="";
-}
-
-function showSkills(){
+    
+ function showPage(pageId){
     hideAllPages();
-    document.getElementById("skills").style.display = "";
-}
-
-function showProjects(){
-    hideAllPages();
-   document.getElementById("projects").style.display="";
-}
-
-function showLanguages(){
-    hideAllPages();
-    document.getElementById("languages").style.display="";
-}
+     document.getElementById(pageId).style.display="";
+    }

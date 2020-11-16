@@ -4,26 +4,26 @@
 <head>  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV</title>
+    <title>CV</title> 
     <link rel="stylesheet" href="style.css">
 </head> 
 
 <body>
     
  <header>
-    <div>
-         <h1>CV</h1>
-       <h2> Coman Oana</h2>
-      <img src="oana.jpg" width="50px">
-      <p id="job"> Asistenta medicala</p>
+    <div class="contenedor-grid">
+         <h1  id="grid1">CV</h1>
+      
+      <img src="poza.png" width="190px" id="grid2">
+      <p id="job" class="grid3">Asistenta medicala</p>
 
-     <h2><span>COMAN OANA</span></h2>
+     <h2 id="coman"><span>COMAN OANA</span></h2>
     </div>
     <ul id="top-menu-bar">
-            <li><a href="#"onclick="showHome()">Home</a></li>
-            <li><a href="#" onclick="showSkills()"> Skills</a> </li>
-            <li><a href="#" onclick="showProjects()">Projects</a></li>
-            <li><a href="#"onclick="showLanguages()">Languages</a></li>
+            <li><a href="#"onclick="showPage('home')">Home</a></li>
+            <li><a href="#" onclick="showPage('skills')"> Skills</a> </li>
+            <li><a href="#" onclick="showPage('projects')">Projects</a></li>
+            <li><a href="#"onclick="showPage('languages')">Languages</a></li>
     </ul>
 
  </header>
@@ -75,7 +75,7 @@
         <td><b>nivel</b></td>
     </tr>
     <tr>
-        <td>limba materna</td>
+        <td>limba materna:romana </td>
         <td>avansat</td>
     </tr>
 

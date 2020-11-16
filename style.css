@@ -30,7 +30,7 @@ header,body > section{
      flex: 1;
  }
  header > div {
-     padding: 5px;
+     padding:5px;
  }
 
 #content{ flex: 4;
@@ -64,7 +64,12 @@ body{
 
 
 #job{
-   color:blue ; text-align:right
+   color:#334455; 
+   text-align: right;
+   padding: 1px;
+   margin: 2px;
+   
+   
 }
 #top-menu-bar{
     text-align: center;
@@ -87,7 +92,7 @@ body{
 }
 
 .favorite{
-    background-color: tomato;
+    background-color:#708090;
     color:black;
     font-style: italic;
    
@@ -109,4 +114,49 @@ body{
     
 
 }
+img{
+    display: block;
+    margin:auto;
+    border-radius:30%;
+    padding:7px;
+    background-color: transparent;
+    }
+.contenedor-grid {
+    display: grid;
+    grid-template-columns:1fr 2fr 1fr ;
+  }  
+   #grid2{
+    
+       background-color:#c2d4dd;
+       background-position:center;
+       
+   }
+   #grid1 {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     text-align:center;
+     padding-top: 30%;
+     padding-bottom:30%; 
+     background-position: center;
+     background-color: #708090;
+     border-top-right-radius:50%;
+     border-bottom-left-radius: 40%;
+    
+     }
+   .grid3 {
+     padding:10px;
+     margin:50%;
+     text-align-last: center;
 
+     
+
+    }
+
+ 
+
+#coman{
+    display: grid;
+     grid-row: 4fr;
+     text-align:left;
+     padding: 0em;
+     margin: 0em;
+}
