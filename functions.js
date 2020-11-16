@@ -23,5 +23,31 @@ function hideAllPages(){
     
  function showPage(pageId){
     hideAllPages();
-     document.getElementById(pageId).style.display="";
-    }
+    document.getElementById(pageId).style.display="";
+}
+
+function initMenu(){
+    document.addEventListener("click", function(e){
+        var link = e.target;
+        if(link.matches("#top-menu-bar a")){
+          var id = link.innerHTML.toLowerCase();
+          showPage(id);
+        }
+    })
+}
+    
+initMenu();
+showPage("skills");
+var skills = [
+    "HTML", 
+    "CSS", 
+    "JS"
+];
+
+var skillsli = skills.map(function(skill){
+    return "<li>" + skill + "</li>";
+});
+
+//todo add"favorite"skill
+var ul = document.querySelector("#skills ul");
+ul.innerHTML = skillsli.join("");

@@ -68,9 +68,8 @@ body{
    text-align: right;
    padding: 1px;
    margin: 2px;
-   
-   
 }
+
 #top-menu-bar{
     text-align: center;
     color:#fff;
@@ -124,15 +123,15 @@ img{
 .contenedor-grid {
     display: grid;
     grid-template-columns:1fr 2fr 1fr ;
-  }  
-   #grid2{
-    
-       background-color:#c2d4dd;
-       background-position:center;
-       
-   }
-   #grid1 {
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}  
+
+#grid2{
+    background-color:#c2d4dd;
+    background-position:center;   
+}
+   
+#grid1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
      text-align:center;
      padding-top: 30%;
      padding-bottom:30%; 
@@ -141,18 +140,14 @@ img{
      border-top-right-radius:50%;
      border-bottom-left-radius: 40%;
     
-     }
-   .grid3 {
+}
+   
+.grid3 {
      padding:10px;
      margin:50%;
      text-align-last: center;
-
-     
-
-    }
-
+}
  
-
 #coman{
     display: grid;
      grid-row: 4fr;
