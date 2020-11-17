@@ -30,7 +30,7 @@ header,body > section{
      flex: 1;
  }
  header > div {
-     padding:5px;
+     padding:0px;
  }
 
 #content{ flex: 4;
@@ -51,7 +51,7 @@ footer{
     min-height: 20px;
     text-align: center;
     padding: 10px;
-    background-color: black;
+    background-color:#334455;
     color: #f5f5f5;
 }
 footer a{
@@ -123,32 +123,36 @@ img{
 .contenedor-grid {
     display: grid;
     grid-template-columns:1fr 2fr 1fr ;
+    padding:0px;
+    margin:0px;
 }  
 
-#grid2{
+.grid2{
     background-color:#c2d4dd;
     background-position:center;   
 }
    
-#grid1 {
+.grid1 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-     text-align:center;
-     padding-top: 30%;
-     padding-bottom:30%; 
-     background-position: center;
+     justify-self: center;
+     align-self: center;
+      padding: 30%;
+      margin:0px;
+     background-position:center;
      background-color: #708090;
      border-top-right-radius:50%;
      border-bottom-left-radius: 40%;
     
 }
    
-.grid3 {
-     padding:10px;
-     margin:50%;
-     text-align-last: center;
+#job{
+     padding:1px;
+     margin:0px;
+     justify-self:center;
+     align-self:flex-end;
 }
  
-#coman{
+.coman{
     display: grid;
      grid-row: 4fr;
      text-align:left;
