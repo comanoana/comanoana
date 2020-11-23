@@ -89,7 +89,13 @@ body{
     display:inline-block;
     
 }
-
+#skills li{
+    font-weight:800;
+}
+#skills li span{
+    font-weight: 200;
+    color:grey;
+}
 .favorite{
     background-color:#708090;
     color:black;
