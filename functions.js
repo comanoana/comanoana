@@ -1,4 +1,4 @@
-
+var activePage="skills";
 function hide(id) {
 //document.getElementById(id).style.display= "none";
     var el = document.getElementById(id);
@@ -12,18 +12,14 @@ function hide(id) {
     }
 } 
 
-function hideAllPages(){
-    var pages = document.querySelectorAll(".page");
-    for(var i = 0; i < pages.length; i++){
-       var page = pages[i];
-        var id = pages[i].id
-        hide(id);
-    } 
+function hidePreviousPage(){
+  hide(activePage);
 }
-    
- function showPage(pageId){
-    hideAllPages();
-    document.getElementById(pageId).style.display="";
+
+function showPage(pageId){
+    hidePreviousPage();
+    document.getElementById(pageId).style.display = "";
+    activePage = pageId;
 }
 
 function initMenu(){
@@ -32,12 +28,14 @@ function initMenu(){
         if(link.matches("#top-menu-bar a")){
           var id = link.innerHTML.toLowerCase();
           showPage(id);
+          link.classList.add("");
         }
     })
 }
     
 initMenu();
-showPage("skills");
+showPage(activePage);
+
 var skills = [
     "HTML", 
     "CSS", 
