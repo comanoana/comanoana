@@ -54,10 +54,6 @@ function showSkills(skills) {
 fetch("data/skills.json").then(r => {
    return r.json();
 }).then((allskills) => {
-    allskills.sort((s1, s2) => {
-    return s2.endorsements - s1.endorsements;
-  
-});
-
+    allskills.sort((s1, s2) =>  s2.endorsements - s1.endorsements);
      showSkills(allskills);
 });
