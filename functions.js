@@ -40,20 +40,20 @@ initMenu();
 showPage(activePage);
 
 function getHTMLSkills(skills) {
-    return skills.map(skill => {
-    return `<li class= "${skill.endorsements > 9 ? "favorite": ""}"> 
+    return skills.map(skill =>
+     `<li class= "${skill.endorsements > 9 ? "favorite": ""}"> 
        ${skill.name} <span>&middot; ${skill.endorsements} </span>
-    </li>`;
-}).join("");
+    </li>`
+     ) .join("");
 }
 function showSkills(skills) {
     const ul = document.querySelector("#skills ul");
     ul.innerHTML = getHTMLSkills(skills);
 }
 
-fetch("data/skills.json").then(r => {
-   return r.json();
-}).then((allskills) => {
+fetch("data/skills.json")
+.then(r => r.json())
+.then((allskills) => {
     allskills.sort((s1, s2) =>  s2.endorsements - s1.endorsements);
-     showSkills(allskills);
+    showSkills(allskills);
 });
